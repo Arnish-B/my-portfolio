@@ -1,12 +1,12 @@
 import React from 'react';
-import { MdDesktopMac, MdCode, MdPhonelinkSetup } from 'react-icons/md';
+// import { MdDesktopMac, MdCode, MdPhonelinkSetup } from 'react-icons/md';
 import styled from 'styled-components';
 import { DiCss3, DiNodejs } from 'react-icons/di';
 
 import {
   SiTailwindcss,
   SiJavascript,
-  SiMaterialui,
+  // SiMaterialui,
   SiEthereum,
   SiWeb3Dotjs,
   SiReact,

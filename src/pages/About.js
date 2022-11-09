@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SiTailwindcss } from 'react-icons/si';
+// import { SiTailwindcss } from 'react-icons/si';
 import PText from '../components/Ptext';
-import Button from '../components/Button';
+// import Button from '../components/Button';
 import AboutImg from '../assets/images/about-page-img.jpeg';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdDesktopMac } from 'react-icons/md';
 import styled from 'styled-components';
-import PText from './Ptext';
+// import PText from './Ptext';
 
 const ItemStyles = styled.div`
   text-align: center;
@@ -22,7 +22,7 @@ const ItemStyles = styled.div`
 export default function ServicesSectionItem({
   icon = <MdDesktopMac />,
   title = 'Web Design',
-  desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ok",
+  // desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ok",
 }) {
   return (
     <ItemStyles className="servicesItem">

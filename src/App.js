@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
+// import ScrollToTop from './components/ScrollToTop';
 import SmoothScrollbar from './components/SmoothScrollbar';
 
 export default function App() {
