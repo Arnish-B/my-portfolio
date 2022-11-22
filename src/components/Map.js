@@ -49,7 +49,7 @@ export default function Map() {
       <div className="container">
         <div className="map__card">
           <h3 className="map__card__heading">Find me here</h3>
-          <PText>Vidyaranyapura, Bengaluru, India</PText>
+          <PText>Bengaluru, India</PText>
           <a
             className="map__card__link"
             href="https://www.google.com/maps/place/Vidyaranyapura,+Bengaluru,+Karnataka/@13.0812816,77.520381,13z/data=!3m1!4b1!4m5!3m4!1s0x3bae229f7a8debe1:0x4d80f1d259c7e7ac!8m2!3d13.0810718!4d77.5561667"

@@ -39,7 +39,7 @@ const ProjectItemStyles = styled.div`
 export default function ProjectItem({
   img = ProjectImg,
   title = 'Project Name',
-  desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
   link = '/',
   github = '/',
 }) {
@@ -55,7 +55,7 @@ export default function ProjectItem({
         <p className="projectItem__desc">{desc}</p>
         <p className="projectItem__desc">
           Live Demo:
-          <a href={link} target="_blank" rel="noopener noreferrer">
+          <a href={link} rel="noopener noreferrer">
             Live Demo
           </a>
         </p>
