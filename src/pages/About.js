@@ -140,14 +140,7 @@ export default function About() {
               <h1 className="about__info__heading">My Skills</h1>
               <AboutInfoItem
                 title="FrontEnd"
-                items={[
-                  'HTML',
-                  'CSS',
-                  'JavaScript',
-                  'REACTJS',
-                  'REDUX',
-                  'NextJS',
-                ]}
+                items={['JavaScript', 'REACTJS', 'REDUX', 'NextJS']}
               />
               <AboutInfoItem
                 title="BackEnd"
