@@ -2,6 +2,7 @@ import React from 'react';
 // import { MdDesktopMac, MdCode, MdPhonelinkSetup } from 'react-icons/md';
 import styled from 'styled-components';
 import { DiCss3, DiNodejs } from 'react-icons/di';
+import { FaAws, FaDocker, FaJava, FaPython, FaBootstrap } from 'react-icons/fa';
 
 import {
   SiTailwindcss,
@@ -55,6 +56,7 @@ export default function ServicesSection() {
           <ServicesSectionItem icon={<AiOutlineHtml5 />} title="HTML" />
           <ServicesSectionItem icon={<DiCss3 />} title="CSS" />
           <ServicesSectionItem icon={<SiTailwindcss />} title="TailwindCSS" />
+          <ServicesSectionItem icon={<FaBootstrap />} title="Bootstrap" />
           <ServicesSectionItem icon={<SiJavascript />} title="Javascript" />
           <ServicesSectionItem
             icon={<AiOutlineAntDesign />}
@@ -64,6 +66,10 @@ export default function ServicesSection() {
           <ServicesSectionItem icon={<SiMongodb />} title="MongoDB" />
           <ServicesSectionItem icon={<SiEthereum />} title="Ethereum" />
           <ServicesSectionItem icon={<DiNodejs />} title="nodeJS" />
+          <ServicesSectionItem icon={<FaAws />} title="AWS" />
+          <ServicesSectionItem icon={<FaJava />} title="Java" />
+          <ServicesSectionItem icon={<FaPython />} title="Python" />
+          <ServicesSectionItem icon={<FaDocker />} title="Docker" />
           <ServicesSectionItem icon={<SiSolidity />} title="Solidity" />
           <ServicesSectionItem icon={<SiWeb3Dotjs />} title="Web 3.0" />
           <ServicesSectionItem icon={<SiRedux />} title="Redux" />

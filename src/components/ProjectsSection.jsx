@@ -88,9 +88,6 @@ export default function ProjectsSection() {
             >
               {projects.map((project, index) => {
                 if (index >= 5) return;
-                console.log(project.name);
-                console.log(project.link);
-                console.log(project.github);
                 return (
                   <SwiperSlide key={project.id}>
                     <ProjectItem

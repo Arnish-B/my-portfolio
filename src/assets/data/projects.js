@@ -3,6 +3,8 @@ import mask3 from '../images/mask3.png';
 import kryptoverse from '../images/kryptoverse.png';
 import krypto from '../images/krypto.png';
 import typo from '../images/typo.png';
+import vrp from '../images/vrp.png';
+import enigma from '../images/enigma.png';
 
 const projects = [
   {
@@ -12,6 +14,22 @@ const projects = [
     img: mask3,
     link: 'https://mask-3.netlify.app/',
     github: 'https://github.com/Arnish-B/metamask-blockchhain-auth',
+  },
+  {
+    id: uuidv4(),
+    name: 'RouteWizard',
+    desc: 'Successfully solved the complex Vehicle Routing Problem by utilizing a variety of algorithms, and developed a user-friendly frontend interface to enhance user acquisition through interactive exploration of location data.',
+    img: vrp,
+    link: '#',
+    github: 'https://github.com/Arnish-B/VRP',
+  },
+  {
+    id: uuidv4(),
+    name: 'Enigma',
+    desc: 'Leverages blockchain, OpenAI, and decentralized network Chainlink to balance user privacy and personalization',
+    img: enigma,
+    link: '#',
+    github: 'https://github.com/Arnish-B/ForeViracy',
   },
   {
     id: uuidv4(),

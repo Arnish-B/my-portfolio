@@ -114,6 +114,10 @@ export default function Footer() {
             heading="Social Links"
             links={[
               {
+                title: 'CV',
+                path: 'https://drive.google.com/file/d/13e8Pb4yjw6nAnkxSHB12pXWa_fFdUano/view?usp=sharing',
+              },
+              {
                 title: 'LinkedIn',
                 path: 'https://www.linkedin.com/in/arnish-bhardwaj-a93051202/',
               },
@@ -125,13 +129,17 @@ export default function Footer() {
                 title: 'Instagram',
                 path: 'https://www.instagram.com/arnishhhhhhh/',
               },
+              {
+                title: 'Medium',
+                path: 'https://medium.com/@arnish',
+              },
             ]}
           />
         </div>
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>© 2022 - Arnish Bhardwaj - All Rights Reserved</PText>
+          <PText>© 2023 - Arnish Bhardwaj - All Rights Reserved</PText>
         </div>
       </div>
     </FooterStyle>

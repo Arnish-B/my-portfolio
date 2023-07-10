@@ -102,7 +102,7 @@ export default function About() {
                   programming abilities and am now a full-stack Blockchain
                   engineer. I work with cutting-edge technology. frameworks for
                   developing safe blockchain apps based on the MERN and Ethereum
-                  stack
+                  stack. I am also an AWS certified solutions architect.
                   <br />
                   <br />
                   My goal is to help make the world a better place. Building
@@ -139,12 +139,16 @@ export default function About() {
             <div className="about__info__item">
               <h1 className="about__info__heading">My Skills</h1>
               <AboutInfoItem
+                title="Certifications"
+                items={['AWS Certified Solutions Architect']}
+              />
+              <AboutInfoItem
                 title="FrontEnd"
                 items={['JavaScript', 'REACTJS', 'REDUX', 'NextJS']}
               />
               <AboutInfoItem
                 title="BackEnd"
-                items={['Node', 'MongoDB', 'MySQL']}
+                items={['AWS', 'Node', 'MongoDB', 'MySQL']}
               />
               <AboutInfoItem
                 title="Blockchain"
@@ -159,8 +163,16 @@ export default function About() {
               <h1 className="about__info__heading">Experiences</h1>
 
               <AboutInfoItem
-                title="2021-"
+                title="2021"
                 items={['Freelance Web and BlockChain Developer']}
+              />
+              <AboutInfoItem
+                title="2021"
+                items={['Front-end Developer for Uninets']}
+              />
+              <AboutInfoItem
+                title="2022"
+                items={['Front-end Developer for Trademarkia']}
               />
             </div>
           </div>

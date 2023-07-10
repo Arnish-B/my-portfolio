@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FiTwitter, FiInstagram } from 'react-icons/fi';
 import { BsLinkedin } from 'react-icons/bs';
 import HeroImg from '../assets/images/hero.jpeg';
+// import HeroImg2 from '../assets/images/HeroImg2.jpg';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
