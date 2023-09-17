@@ -6,6 +6,7 @@ import ProjectItem from './ProjectItem';
 import SectionTitle from './SectionTitle';
 import 'swiper/swiper-bundle.min.css';
 import projects from '../assets/data/projects';
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
@@ -57,10 +58,14 @@ const ProjectSectionStyle = styled.div`
 `;
 
 export default function ProjectsSection() {
+  const [ref, isVisible] = useIntersectionObserver({ threshold: 0.5 });
   // console.log(projects);
   return (
     projects && (
-      <ProjectSectionStyle>
+      <ProjectSectionStyle
+        ref={ref}
+        className={`hero-section ${isVisible ? 'animation-class' : ''}`}
+      >
         <div className="container">
           <SectionTitle
             subheading="some of my recent works"

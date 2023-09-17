@@ -5,6 +5,7 @@ import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import PText from './Ptext';
 import SectionTitle from './SectionTitle';
 import testimonials from '../assets/data/testimonials';
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 const TestimonialSectionStyles = styled.div`
   overflow-x: hidden;
@@ -98,9 +99,13 @@ export default function TestimonialsSection() {
       setActiveIndex((oldIndex) => oldIndex - 1);
     }
   }
+  const [ref, isVisible] = useIntersectionObserver({ threshold: 0.5 });
 
   return (
-    <TestimonialSectionStyles>
+    <TestimonialSectionStyles
+      ref={ref}
+      className={`hero-section ${isVisible ? 'animation-class' : ''}`}
+    >
       <div className="container">
         <SectionTitle
           subheading="see what my clients say about me"

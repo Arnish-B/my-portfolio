@@ -4,6 +4,7 @@ import Button from './Button';
 import Ptext from './Ptext';
 import SectionTitle from './SectionTitle';
 import AboutImg from '../assets/images/about-sec-img.png';
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -71,8 +72,12 @@ const AboutSectionStyles = styled.div`
 `;
 
 export default function AboutSection() {
+  const [ref, isVisible] = useIntersectionObserver({ threshold: 0.5 });
   return (
-    <AboutSectionStyles>
+    <AboutSectionStyles
+      ref={ref}
+      className={`hero-section ${isVisible ? 'animation-class' : ''}`}
+    >
       <div className="container">
         <div className="aboutSection__left">
           <SectionTitle

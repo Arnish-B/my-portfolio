@@ -8,6 +8,7 @@ import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 import PText from './Ptext';
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 const HeroStyles = styled.div`
   .hero {
@@ -147,8 +148,12 @@ const HeroStyles = styled.div`
 `;
 
 export default function HeroSection() {
+  const [ref, isVisible] = useIntersectionObserver({ threshold: 0.5 });
   return (
-    <HeroStyles>
+    <HeroStyles
+      ref={ref}
+      className={`hero-section ${isVisible ? 'animation-class' : ''}`}
+    >
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">

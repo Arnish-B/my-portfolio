@@ -22,6 +22,7 @@ import { GrGatsbyjs } from 'react-icons/gr';
 
 import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 const ServicesItemsStyles = styled.div`
   padding: 10rem 0;
@@ -48,8 +49,12 @@ const ServicesItemsStyles = styled.div`
 `;
 
 export default function ServicesSection() {
+  const [ref, isVisible] = useIntersectionObserver({ threshold: 0.5 });
   return (
-    <ServicesItemsStyles>
+    <ServicesItemsStyles
+      ref={ref}
+      className={`hero-section ${isVisible ? 'animation-class' : ''}`}
+    >
       <div className="container">
         <SectionTitle subheading="What i can do for you" heading="Services" />
         <div className="services__allItems">

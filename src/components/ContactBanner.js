@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
 import PText from './Ptext';
+import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 const ContactBannerStyles = styled.div`
   padding: 5rem 0;
@@ -23,8 +24,12 @@ const ContactBannerStyles = styled.div`
 `;
 
 export default function ContactBanner() {
+  const [ref, isVisible] = useIntersectionObserver({ threshold: 0.5 });
   return (
-    <ContactBannerStyles>
+    <ContactBannerStyles
+      ref={ref}
+      className={`hero-section ${isVisible ? 'animation-class' : ''}`}
+    >
       <div className="container">
         <div className="contactBanner__wrapper">
           <PText>Have a project in mind!?</PText>
